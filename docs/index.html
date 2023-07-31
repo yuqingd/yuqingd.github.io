@@ -71,7 +71,7 @@
           <!-- About -->
           <li class="nav-item active">
             <a class="nav-link" href="/">
-              about
+              home
               
                 <span class="sr-only">(current)</span>
               
@@ -157,8 +157,8 @@
 
       <p>I am also currently a visiting researcher at <a href="https://ai.meta.com/research/">FAIR (Meta)</a>. Previously, I have also interned at <a href="https://www.deepmind.com">DeepMind</a> and <a href="https://x.company">X, the moonshot factory</a>. </p>
       
-<p>Currently, I am broadly interested in better imbuing reinforcement-learning-based agents with human preferences, knowledge, and world priors. For example, some of my prior works 
-include training multimodal reward models from human data, learning to assist and empower individuals, and leveraging common-sense human priors for exploration. </p>
+<p>I am broadly interested in helping reinforcement-learning-based agents learn from humans -- whether that be understanding human preferences, learning from interaction, or acquiring world priors. For example, some of my prior works 
+include training multimodal reward models from human data, learning to assist and empower individuals, and leveraging common-sense human priors for open-ended exploration. </p>
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
@@ -173,32 +173,303 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
     
       <div class="publications">
+
+        <h2>preprints</h2>
+
+        <ol class="bibliography"><li><div class="row">
+          <div class="col-sm-3 abbr">
+            <center>
+              <img class="img-fluid z-depth-1 rounded" src="/assets/img/dpok.png">
+            </center>
+          </div>
+        
+        <div id="fan2023dpok" class="col-sm-7">
+          
+          <div class="title"><a href="https://arxiv.org/pdf/2305.16381.pdf">DPOK: Reinforcement Learning for Fine-tuning Text-to-Image Diffusion Models</a></div>
+          <div class="author">
+            Ying Fan, Olivia Watkins, <em>Yuqing Du</em>, Hao Liu, Moonkyung Ryu, Craig Boutilier, Pieter Abbeel, Mohammad Ghavamzadeh, Kangwook Lee, and Kimin Lee
+        
+        </div>
+        
+          <div class="periodical">      
+          
+          </div>
+        
+        
+        <div class="links">
+        
+          <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+          <a href="https://arxiv.org/abs/2305.16381" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+          <a href="https://sites.google.com/view/dpok-t2i-diffusion/home" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+        
+        </div>
+        
+        <!-- Hidden abstract block -->
+        
+        <div class="abstract hidden">
+          <p>Learning from human feedback has been shown to improve text-to-image models. These techniques first learn a reward function that captures what humans care about in the task and then improve the models based on the learned reward function. Even though relatively simple approaches (e.g., rejection sampling based on reward scores) have been investigated, fine-tuning text-to-image models with the reward function remains challenging. In this work, we propose using online reinforcement learning (RL) to fine-tune text-to-image models. We focus on diffusion models, defining the fine-tuning task as an RL problem, and updating the pre-trained text-to-image diffusion models using policy gradient to maximize the feedback-trained reward. Our approach, coined DPOK, integrates policy optimization with KL regularization. We conduct an analysis of KL regularization for both RL fine-tuning and supervised fine-tuning. In our experiments, we show that DPOK is generally superior to supervised fine-tuning with respect to both image-text alignment and image quality. </p>
+        </div>
+        
+        </div>
+        
+        
+        </div>
+        </li></ol>
+
+        <ol class="bibliography"><li><div class="row">
+          <div class="col-sm-3 abbr">
+
+            <center>
+            <img class="img-fluid z-depth-1 rounded" src="/assets/img/t2i.png">
+          </center> 
+          </div>
+        
+        <div id="lee2023t2i" class="col-sm-7">
+          
+        <div class="title"><a href="https://arxiv.org/pdf/2302.12192.pdf">Aligning Text-to-Image Models using Human Feedback</a></div>
+          <div class="author">
+            Kimin Lee, Hao Liu, Moonkyung Ryu, Olivia Watkins, <em>Yuqing Du</em>, Craig Boutilier, Pieter Abbeel, Mohammad Ghavamzadeh, and Shixiang Shane Gu
+        
+        </div>
+        
+          <div class="periodical">      
+          
+          </div>
+        
+        
+        <div class="links">
+        
+          <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+          <a href="https://arxiv.org/abs/2302.12192" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+        
+        </div>
+        
+        <!-- Hidden abstract block -->
+        
+        <div class="abstract hidden">
+          <p>Deep generative models have shown impressive results in text-to-image synthesis. However, current text-to-image models often generate images that are inadequately aligned with text prompts. We propose a fine-tuning method for aligning such models using human feedback, comprising three stages. First, we collect human feedback assessing model output alignment from a set of diverse text prompts. We then use the human-labeled image-text dataset to train a reward function that predicts human feedback. Lastly, the text-to-image model is fine-tuned by maximizing reward-weighted likelihood to improve image-text alignment. Our method generates objects with specified colors, counts and backgrounds more accurately than the pre-trained model. We also analyze several design choices and find that careful investigations on such design choices are important in balancing the alignment-fidelity tradeoffs. Our results demonstrate the potential for learning from human feedback to significantly improve text-to-image models. </p>
+        </div>
+        
+        </div>
+        
+        
+        </div>
+        </li></ol>
+        
+        <ol class="bibliography"><li><div class="row">
+        <div class="col-sm-3 abbr">
+
+          <center>
+          <img class="img-fluid z-depth-1 rounded" src="/assets/img/advpop.png">
+        </center> 
+        </div>
+        
+        <div id="vinitsky2020robust" class="col-sm-7">
+          
+            <div class="title"><a href="http://arxiv.org/pdf/2008.01825.pdf">Robust Reinforcement Learning using Adversarial Populations</a></div>
+            <div class="author">
+              <a href="https://eugenevinitsky.github.io/" target="_blank">Eugene Vinitsky*</a>,
+            <em>Yuqing Du*</em>,
+              <a href="http://kanaad.me/" target="_blank">Kanaad Parvate*</a>,
+              <a href="http://kathyjang.com/" target="_blank">Kathy Jang</a>,
+              <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>,
+              and <a href="https://bayen.berkeley.edu/alex-bayen" target="_blank">Alexandre Bayen</a>
+            </div>
+        
+            <div class="periodical">     
+            
+            </div>
+          
+        
+          <div class="links">
+          
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+            <a href="http://arxiv.org/abs/2008.01825" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+            <a href="https://github.com/eugenevinitsky/robust_RL_multi_adversary" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+          
+          
+          
+          
+          </div>
+        
+          <!-- Hidden abstract block -->
+          
+          <div class="abstract hidden">
+            <p>Reinforcement Learning (RL) is an effective tool for controller design but can struggle with issues of robustness, failing catastrophically when the underlying system dynamics are perturbed. The Robust RL formulation tackles this by adding worst-case adversarial noise to the dynamics and constructing the noise distribution as the solution to a zero-sum minimax game. However, existing work on learning solutions to the Robust RL formulation has primarily focused on training a single RL agent against a single adversary. In this work, we demonstrate that using a single adversary does not consistently yield robustness to dynamics variations under standard parametrizations of the adversary; the resulting policy is highly exploitable by new adversaries. We propose a population-based augmentation to the Robust RL formulation in which we randomly initialize a population of adversaries and sample from the population uniformly during training. We empirically validate across robotics benchmarks that the use of an adversarial population results in a more robust policy that also improves out-of-distribution generalization. Finally, we demonstrate that this approach provides comparable robustness and generalization as domain randomization on these benchmarks while avoiding a ubiquitous domain randomization failure mode. </p>
+          </div>
+          
+        </div>
+        </div>
+        </li></ol>
+        
  
   <h2>publications</h2>
   <ol class="bibliography">
+
+    <li><div class="row">
+      <div class="col-sm-3 abbr">
+        <center>
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/vlm.png">
+        <abbr class="badge">CoLLAs 2023</abbr>
+        </center>
+      </div>
+    
+      <div id="du2023vlm" class="col-sm-7">
+        
+          <div class="title"><a href="https://arxiv.org/pdf/2303.07280.pdf">Vision-Language Models as Success Detectors</a></div>
+          <div class="author">
+            <em>Yuqing Du</em>, 
+            <a href="https://ksenia.konyushkova.com">Ksenia Konyushkova</a>, 
+            <a href="https://mdenil.com">Misha Denil</a>,
+            <a href="https://www.akhilr.com">Akhil Raju</a>,
+            Jessica Landon,
+            <a href="https://fh295.github.io">Felix Hill</a>, 
+            <a href="https://www.cs.ox.ac.uk/people/nando.defreitas/">Nando de Freitas</a>, and
+            <a href="https://scholar.google.com/citations?user=l-HhJaUAAAAJ&hl=en">Serkan Cabi</a>
+           
+          </div>
+    
+          <div class="periodical">
+          
+            <em> Conference on Lifelong Learning Agents (CoLLAs) 2023</em> <br><b>(Oral)</b>
+          
+          </div>
+        
+    
+        <div class="links">
+        
+          <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+          <a href="https://arxiv.org/abs/2303.07280" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+        </div>
+    
+        <!-- Hidden abstract block -->
+        
+        <div class="abstract hidden">
+          <p>Detecting successful behaviour is crucial for training intelligent agents. As such, generalisable reward models are a prerequisite for agents that can learn to generalise their behaviour. In this work we focus on developing robust success detectors that leverage large, pretrained vision-language models (Flamingo, Alayrac et al. (2022)) and human reward annotations. Concretely, we treat success detection as a visual question answering (VQA) problem, denoted SuccessVQA. We study success detection across three vastly different domains: (i) interactive language-conditioned agents in a simulated household, (ii) real world robotic manipulation, and (iii) "in-the-wild" human egocentric videos. We investigate the generalisation properties of a Flamingo-based success detection model across unseen language and visual changes in the first two domains, and find that the proposed method is able to outperform bespoke reward models in out-of-distribution test scenarios with either variation. In the last domain of "in-the-wild" human videos, we show that success detection on unseen real videos presents an even more challenging generalisation task warranting future work. We hope our initial results encourage further work in real world success detection and reward modelling.</p>
+        </div>
+        
+      </div>
+    </div>
+    </li>
+    
+    <li><div class="row">
+      <div class="col-sm-3 abbr">
+
+        <center>
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/ellm.png">
+        <abbr class="badge">ICML 2023</abbr>
+        </center>
+      </div>
+    
+      <div id="du2023ellm" class="col-sm-7">
+        
+          <div class="title"><a href="https://arxiv.org/pdf/2302.06692.pdf">Guiding Pretraining in Reinforcement Learning with Large Language Models</a></div>
+          <div class="author">
+            <em>Yuqing Du*</em>, 
+            <a href="https://www.linkedin.com/in/olivia-watkins-a73580bb/" target="_blank">Olivia Watkins*</a>,
+            <a href="https://zihanwangki.github.io">Zihan Wang</a>,
+            <a href="https://scholar.google.fr/citations?user=VBz8gZ4AAAAJ&hl=fr">Cédric Colas</a>,
+            <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank">Trevor Darrell</a>,
+            <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>,
+            <a href="https://abhishekunique.github.io">Abhishek Gupta</a>, and
+            <a href="https://www.mit.edu/~jda/">Jacob Andreas</a>
+          </div>
+    
+          <div class="periodical">
+          
+            <em> International Conference on Machine Learning (ICML) 2023</em>
+          
+          </div>
+        
+    
+        <div class="links">
+        
+          <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+          <a href="https://arxiv.org/abs/2302.06692" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+        </div>
+    
+        <!-- Hidden abstract block -->
+        
+        <div class="abstract hidden">
+          <p>Reinforcement learning algorithms typically struggle in the absence of a dense, well-shaped reward function. Intrinsically motivated exploration methods address this limitation by rewarding agents for visiting novel states or transitions, but these methods offer limited benefits in large environments where most discovered novelty is irrelevant for downstream tasks. We describe a method that uses background knowledge from text corpora to shape exploration. This method, called ELLM (Exploring with LLMs) rewards an agent for achieving goals suggested by a language model prompted with a description of the agent's current state. By leveraging large-scale language model pretraining, ELLM guides agents toward human-meaningful and plausibly useful behaviors without requiring a human in the loop. We evaluate ELLM in the Crafter game environment and the Housekeep robotic simulator, showing that ELLM-trained agents have better coverage of common-sense behaviors during pretraining and usually match or improve performance on a range of downstream tasks.</p>
+        </div>
+        
+      </div>
+    </div>
+    </li>
+
   <li><div class="row">
-      <div class="col-sm-2 abbr">
-        <abbr class="badge">ICML 2022</abbr>
+      <div class="col-sm-3 abbr">
+
+        <center>
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/tcl.png">
+        <abbr class="badge">ICRA 2023</abbr></center>
       </div>
     
-      <div id="du2022vib" class="col-sm-8">
+      <div id="khansari2023tcl" class="col-sm-7">
         
-          <div class="title">Bayesian Imitation Learning for End-to-End Mobile Manipulation</b></div>
+          <div class="title"><a href="https://arxiv.org/pdf/2202.01862.pdf">Practical Visual Deep Imitation Learning via Task-Level Domain Consistency</a></div>
           <div class="author">
-                    <em>Du, Yuqing</em>,
-                      <a href="https://scholar.google.com/citations?hl=en&user=i05Kw5cAAAAJ" target="_blank">Ho, Daniel</a>,
-                      <a href="https://www.alexalemi.com" target="_blank">Alemi, Alexander A.</a>,
-                      <a href="https://evjang.com" target="_blank">Jang, Eric</a>,
-                      and <a href="https://scholar.google.ch/citations?user=Z3dxz9IAAAAJ" target="_blank">Khansari, Mohi</a>
+            <a href="https://scholar.google.ch/citations?user=Z3dxz9IAAAAJ" target="_blank">Mohi Khansari</a>,
+            <a href="https://scholar.google.com/citations?hl=en&user=i05Kw5cAAAAJ" target="_blank">Daniel Ho</a>,
+           <em>Yuqing Du</em>, 
+           Armando Fuentes, 
+           Matthew Bennice,
+           Nicolas Sievers,
+           <a href="https://kirmani.io">Sean Kirmani</a>,
+           <a href="https://www.yunfei-bai.com" target="_blank">Yunfei Bai</a>, 
+           and  <a href="https://evjang.com" target="_blank">Eric Jang</a>
+            
+          </div>
+    
+          <div class="periodical">
+          
+            <em> International Conference on Robotics and Automation (ICRA) 2023</em>
+          
+          </div>
+        
+    
+        <div class="links">
+        
+          <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+          <a href="https://arxiv.org/abs/2202.01862" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+        </div>
+    
+        <!-- Hidden abstract block -->
+        
+        <div class="abstract hidden">
+          <p>Recent work in visual end-to-end learning for robotics has shown the promise of imitation learning across a variety of tasks. Such approaches are however expensive both because they require large amounts of real world data and rely on time-consuming real-world evaluations to identify the best model for deployment. These challenges can be mitigated by using simulation evaluations to identify high performing policies. However, this introduces the well-known “reality gap” problem, where simulator inaccuracies decorrelate performance in simulation from that of reality. In this paper, we build on top of prior work in GAN-based domain adaptation and introduce the notion of a Task Consistency Loss (TCL), a self-supervised loss that encourages sim and real alignment both at the feature and action-prediction levels. We demonstrate the effectiveness of our approach by teaching a 9-DoF mobile manipulator to perform the challenging task of latched door opening purely from visual inputs such as RGB and depth images. We achieve 69% success across twenty seen and unseen meeting rooms using only ~ 16.2 hours of teleoperated demonstrations in sim and real. To the best of our knowledge, this is the first work to tackle latched door opening from a purely end-to-end learning approach, where the task of navigation and manipulation are jointly modeled by a single neural network.</p>
+        </div>
+        
+      </div>
+    </div>
+    </li>
+
+    
+    <li><div class="row">
+      <div class="col-sm-3 abbr">
+
+        <center>
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/vib.png">
+        <abbr class="badge">ICML 2022</abbr>
+        </center>
+      </div>
+    
+      <div id="du2022vib" class="col-sm-7">
+        
+          <div class="title"><a href="https://arxiv.org/pdf/2202.07600.pdf">Bayesian Imitation Learning for End-to-End Mobile Manipulation</a></div>
+          <div class="author">
+                    <em>Yuqing Du</em>,
+                      <a href="https://scholar.google.com/citations?hl=en&user=i05Kw5cAAAAJ" target="_blank">Daniel Ho</a>,
+                      <a href="https://www.alexalemi.com" target="_blank">Alexander A. Alemi</a>,
+                      <a href="https://evjang.com" target="_blank">Eric Jang</a>,
+                      and <a href="https://scholar.google.ch/citations?user=Z3dxz9IAAAAJ" target="_blank">Mohi Khansari</a>
             
           </div>
     
           <div class="periodical">
           
             <em>International Conference on Machine Learning (ICML) 2022</em>
-            <br>
-            july
-            2022
           
           </div>
         
@@ -219,74 +490,31 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     </div>
     </li>
 
-    
-    <li><div class="row">
-      <div class="col-sm-2 abbr">
-        <abbr class="badge">ICML 2022</abbr>
-      </div>
-    
-      <div id="du2022vib" class="col-sm-8">
-        
-          <div class="title">Bayesian Imitation Learning for End-to-End Mobile Manipulation</b></div>
-          <div class="author">
-                    <em>Du, Yuqing</em>,
-                      <a href="https://scholar.google.com/citations?hl=en&user=i05Kw5cAAAAJ" target="_blank">Ho, Daniel</a>,
-                      <a href="https://www.alexalemi.com" target="_blank">Alemi, Alexander A.</a>,
-                      <a href="https://evjang.com" target="_blank">Jang, Eric</a>,
-                      and <a href="https://scholar.google.ch/citations?user=Z3dxz9IAAAAJ" target="_blank">Khansari, Mohi</a>
-            
-          </div>
-    
-          <div class="periodical">
-          
-            <em>International Conference on Machine Learning (ICML) 2022</em>
-            <br>
-            july
-            2022
-          
-          </div>
-        
-    
-        <div class="links">
-        
-          <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-          <a href="https://arxiv.org/abs/2202.07600" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
-        </div>
-    
-        <!-- Hidden abstract block -->
-        
-        <div class="abstract hidden">
-          <p>In this work we investigate and demonstrate benefits of a Bayesian approach to imitation learning from multiple sensor inputs, as applied to the task of opening office doors with a mobile manipulator. Augmenting policies with additional sensor inputs, such as RGB + depth cameras, is a straightforward approach to improving robot perception capabilities, especially for tasks that may favor different sensors in different situations. As we scale multi-sensor robotic learning to unstructured real-world settings (e.g. offices, homes) and more complex robot behaviors, we also increase reliance on simulators for cost, efficiency, and safety. Consequently, the sim-to-real gap across multiple sensor modalities also increases, making simulated validation more difficult. We show that using the Variational Information Bottleneck (Alemi et al., 2016) to regularize convolutional neural networks improves generalization to held-out domains and reduces the sim-to-real gap in a sensor-agnostic manner. As a side effect, the learned embeddings also provide useful estimates of model uncertainty for each sensor. We demonstrate that our method is able to help close the sim-to-real gap and successfully fuse RGB and depth modalities based on understanding of the situational uncertainty of each sensor. In a real-world office environment, we achieve 96% task success, improving upon the baseline by +16%.</p>
-        </div>
-        
-      </div>
-    </div>
-    </li>
-
 
 
 
     <li><div class="row">
-      <div class="col-sm-2 abbr">
+      <div class="col-sm-3 abbr">
+
+        <center>
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/cusp.png">
         <abbr class="badge">ICLR 2022</abbr>
+        </center> 
       </div>
     
-      <div id="du2022tango" class="col-sm-8">
+      <div id="du2022tango" class="col-sm-7">
         
-          <div class="title">It Takes Four to Tango: Multiagent Selfplay for Automatic Curriculum Generation</b></div>
+          <div class="title"><a href="https://arxiv.org/pdf/2202.10608.pdf">It Takes Four to Tango: Multiagent Selfplay for Automatic Curriculum Generation</a></div>
           <div class="author">
-                    <em>Du, Yuqing</em>,
-                      <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Abbeel, Pieter</a>,
-                      and <a href="http://aditya-grover.github.io/" target="_blank">Grover, Aditya</a>
+                    <em>Yuqing Du</em>,
+                      <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>,
+                      and <a href="http://aditya-grover.github.io/" target="_blank">Aditya Grover</a>
             
           </div>
     
           <div class="periodical">
           
             <em>International Conference on Learning Representations (ICLR) 2022</em>
-            <br>
-            april
-            2022
           
           </div>
         
@@ -313,28 +541,29 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 
     <li><div class="row">
-      <div class="col-sm-2 abbr">
+      <div class="col-sm-3 abbr">
+        
+        <center>
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/sim2real.png">
         <abbr class="badge">ICRA 2021</abbr>
+        </center> 
       </div>
     
-      <div id="du2020sim2real" class="col-sm-8">
+      <div id="du2020sim2real" class="col-sm-7">
         
-          <div class="title">Auto-Tuned Sim-to-Real Transfer <br><b>(Best Cognitive Robotics Paper Finalist)</b></div>
+          <div class="title"><a href="https://arxiv.org/pdf/2104.07662.pdf">Auto-Tuned Sim-to-Real Transfer</a></div>
           <div class="author">
-                    <em>Du, Yuqing*</em>,
-                      <a href="https://www.linkedin.com/in/olivia-watkins-a73580bb/" target="_blank">Watkins, Olivia*</a>,
-                      <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank">Darrell, Trevor</a>,
-                      <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Abbeel, Pieter</a>,
-                      and <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank">Pathak, Deepak</a>
+                    <em>Yuqing Du*</em>,
+                      <a href="https://www.linkedin.com/in/olivia-watkins-a73580bb/" target="_blank">Olivia Watkins*</a>,
+                      <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank">Trevor Darrell</a>,
+                      <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>,
+                      and <a href="https://www.cs.cmu.edu/~dpathak/" target="_blank">Deepak Pathak</a>
             
           </div>
     
           <div class="periodical">
           
-            <em>2021 International Conference on Robotics and Automation (ICRA)</em>
-            <br>
-            june
-            2021
+            <em>International Conference on Robotics and Automation (ICRA) 2021</em>  <br><b>(Best Cognitive Robotics Paper Finalist)</b>
           
           </div>
         
@@ -359,29 +588,30 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     </div>
     </li>
 <li><div class="row">
-  <div class="col-sm-2 abbr">
+  <div class="col-sm-3 abbr">
+
+    <center>
+    <img class="img-fluid z-depth-1 rounded" src="/assets/img/empowerment.png">
     <abbr class="badge">NeurIPS 2020</abbr>
+    </center> 
   </div>
 
-  <div id="du2020ave" class="col-sm-8">
+  <div id="du2020ave" class="col-sm-7">
     
-      <div class="title">AvE: Assistance via Empowerment</div>
+      <div class="title"><a href="http://arxiv.org/pdf/2006.14796.pdf">AvE: Assistance via Empowerment</a></div>
       <div class="author">
-                <em>Du, Yuqing</em>,
-                  <a href="https://www.researchgate.net/profile/Stas_Tiomkin" target="_blank">Tiomkin, Stas</a>,
-                  <a href="https://www.microsoft.com/en-us/research/people/emrek/" target="_blank">Kiciman, Emre</a>,
-                  <a href="https://scholar.google.com/citations?user=wdZT8N8AAAAJ&hl=en" target="_blank">Polani, Daniel</a>,
-                  <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Abbeel, Pieter</a>,
-                  and <a href="http://people.eecs.berkeley.edu/~anca/" target="_blank">Dragan, Anca</a>
+                <em>Yuqing Du</em>,
+                  <a href="https://www.researchgate.net/profile/Stas_Tiomkin" target="_blank">Stas Tiomkin</a>,
+                  <a href="https://www.microsoft.com/en-us/research/people/emrek/" target="_blank">Emre Kiciman</a>,
+                  <a href="https://scholar.google.com/citations?user=wdZT8N8AAAAJ&hl=en" target="_blank">Daniel Polani</a>,
+                  <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>,
+                  and <a href="http://people.eecs.berkeley.edu/~anca/" target="_blank">Anca Dragan</a>
         
       </div>
 
       <div class="periodical">
       
-        <em>2020 Neural Information Processing Systems (NeurIPS)</em>
-        <br>
-        dec
-        2020
+        <em>Neural Information Processing Systems (NeurIPS) 2020</em>
       
       </div>
     
@@ -406,37 +636,35 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 </div>
 </li>
 <li><div class="row">
-  <div class="col-sm-2 abbr">
-  
-    
-    <abbr class="badge">ICRA 2019</abbr>
+  <div class="col-sm-3 abbr">
+    <center>
+    <img class="img-fluid z-depth-1 rounded" src="/assets/img/groupsurf.png">
+    <abbr class="badge">ICRA 2019</abbr></center> 
     
   
   </div>
 
-  <div id="du2019group" class="col-sm-8">
+  <div id="du2019group" class="col-sm-7">
     
-      <div class="title">Group Surfing: A Pedestrian-Based Approach to Sidewalk Robot Navigation</div>
+      <div class="title"><a href="https://arxiv.org/pdf/2104.05933.pdf">Group Surfing: A Pedestrian-Based Approach to Sidewalk Robot Navigation</a></div>
       <div class="author">
         
-                <em>Du, Yuqing</em>,
-                  <a href="https://nickhetherington.ca/" target="_blank">Hetherington, Nicholas J.</a>,
-                  <a href="https://www.linkedin.com/in/oonchulip97" target="_blank">Oon, Chu Lip</a>,
+                <em>Yuqing Du</em>,
+                  <a href="https://nickhetherington.ca/" target="_blank">Nicholas J. Hetherington </a>,
+                  <a href="https://www.linkedin.com/in/oonchulip97" target="_blank">Chu Lip Oon</a>,
                 
-                  <a href="https://research.monash.edu/en/persons/wesley-chan" target="_blank">Chan, Wesley P.</a>,
-                  <a href="https://scholar.google.com.au/citations?user=Khbq32QAAAAJ&hl=en" target="_blank">Quintero, Camilo P.</a>,
+                  <a href="https://research.monash.edu/en/persons/wesley-chan" target="_blank"> Wesley P. Chan</a>,
+                  <a href="https://scholar.google.com.au/citations?user=Khbq32QAAAAJ&hl=en" target="_blank">Camilo P. Quintero</a>,
                 
-                  <a href="https://research.monash.edu/en/persons/elizabeth-croft" target="_blank">Croft, Elizabeth</a>,
-                  and <a href="https://mech.ubc.ca/machiel-van-der-loos/" target="_blank">Van der Loos, Machiel H. F.</a>
+                  <a href="https://research.monash.edu/en/persons/elizabeth-croft" target="_blank">Elizabeth Croft</a>,
+                  and <a href="https://mech.ubc.ca/machiel-van-der-loos/" target="_blank">Machiel H. F. Van der Loos</a>
                 
       </div>
 
       <div class="periodical">
       
-        <em>2019 International Conference on Robotics and Automation (ICRA)</em>
-        <br>
-        may
-        2019
+        <em>International Conference on Robotics and Automation (ICRA) 2019</em>
+        
       
       </div>
     
@@ -445,7 +673,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     
       <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
       <a href="https://arxiv.org/abs/2104.05933" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
-      <a href="https://ieeexplore.ieee.org/document/8793608" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
     
     </div>
 
@@ -458,104 +685,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
   </div>
 </div>
 </li></ol>
-<h2>preprints</h2>
-
-<ol class="bibliography"><li><div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-<div id="khansari2022tcl" class="col-sm-8">
-  
-  <div class="title">Practical Imitation Learning in the Real World via Task Consistency Loss</div>
-  <div class="author">
-     <a href="https://scholar.google.ch/citations?user=Z3dxz9IAAAAJ" target="_blank">Khansari, Mohi</a>,
-     <a href="https://scholar.google.com/citations?hl=en&user=i05Kw5cAAAAJ" target="_blank">Ho, Daniel</a>,
-    <em>Du, Yuqing</em>, 
-    Fuentes, Armando, 
-    Bennice, Matthew, 
-    Sievers, Nicolas,
-    <a href="https://kirmani.io">Kirmani, Sean</a>,
-    <a href="https://www.yunfei-bai.com" target="_blank">Bai, Yunfei</a>, 
-    and  <a href="https://evjang.com" target="_blank">Jang, Eric</a>
-
-</div>
-
-  <div class="periodical">      
-    <br>
-    feb
-    2022
-  
-  </div>
-
-
-<div class="links">
-
-  <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-  <a href="https://arxiv.org/abs/2202.01862" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
-
-</div>
-
-<!-- Hidden abstract block -->
-
-<div class="abstract hidden">
-  <p>Recent work in visual end-to-end learning for robotics has shown the promise of imitation learning across a variety of tasks. Such approaches are expensive both because they require large amounts of real world training demonstrations and because identifying the best model to deploy in the real world requires time-consuming real-world evaluations. These challenges can be mitigated by simulation: by supplementing real world data with simulated demonstrations and using simulated evaluations to identify high performing policies. However, this introduces the well-known "reality gap" problem, where simulator inaccuracies decorrelate performance in simulation from that of reality. In this paper, we build on top of prior work in GAN-based domain adaptation and introduce the notion of a Task Consistency Loss (TCL), a self-supervised loss that encourages sim and real alignment both at the feature and action-prediction levels. We demonstrate the effectiveness of our approach by teaching a mobile manipulator to autonomously approach a door, turn the handle to open the door, and enter the room. The policy performs control from RGB and depth images and generalizes to doors not encountered in training data. We achieve 72% success across sixteen seen and unseen scenes using only ~16.2 hours of teleoperated demonstrations in sim and real. To the best of our knowledge, this is the first work to tackle latched door opening from a purely end-to-end learning approach, where the task of navigation and manipulation are jointly modeled by a single neural network. </p>
-</div>
-
-</div>
-
-
-</div>
-</li></ol>
-
-<ol class="bibliography"><li><div class="row">
-<div class="col-sm-2 abbr">
-
-</div>
-
-<div id="vinitsky2020robust" class="col-sm-8">
-  
-    <div class="title">Robust Reinforcement Learning using Adversarial Populations</div>
-    <div class="author">
-                <a href="https://eugenevinitsky.github.io/" target="_blank">Vinitsky, Eugene*</a>,
-              <em>Du, Yuqing*</em>,
-                <a href="http://kanaad.me/" target="_blank">Parvate, Kanaad*</a>,
-                <a href="http://kathyjang.com/" target="_blank">Jang, Kathy</a>,
-                <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Abbeel, Pieter</a>,
-                and <a href="https://bayen.berkeley.edu/alex-bayen" target="_blank">Bayen, Alexandre</a>
-    </div>
-
-    <div class="periodical">      
-      <br>
-      aug
-      2020
-    
-    </div>
-  
-
-  <div class="links">
-  
-    <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-    <a href="http://arxiv.org/abs/2008.01825" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
-    <a href="https://github.com/eugenevinitsky/robust_RL_multi_adversary" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
-  
-  
-  
-  
-  </div>
-
-  <!-- Hidden abstract block -->
-  
-  <div class="abstract hidden">
-    <p>Reinforcement Learning (RL) is an effective tool for controller design but can struggle with issues of robustness, failing catastrophically when the underlying system dynamics are perturbed. The Robust RL formulation tackles this by adding worst-case adversarial noise to the dynamics and constructing the noise distribution as the solution to a zero-sum minimax game. However, existing work on learning solutions to the Robust RL formulation has primarily focused on training a single RL agent against a single adversary. In this work, we demonstrate that using a single adversary does not consistently yield robustness to dynamics variations under standard parametrizations of the adversary; the resulting policy is highly exploitable by new adversaries. We propose a population-based augmentation to the Robust RL formulation in which we randomly initialize a population of adversaries and sample from the population uniformly during training. We empirically validate across robotics benchmarks that the use of an adversarial population results in a more robust policy that also improves out-of-distribution generalization. Finally, we demonstrate that this approach provides comparable robustness and generalization as domain randomization on these benchmarks while avoiding a ubiquitous domain randomization failure mode. </p>
-  </div>
-  
-</div>
-</div>
-</li></ol>
-
-</div>
-
     
 
     
@@ -570,11 +699,11 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2020 Yuqing  Du.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+    &copy; Copyright 2023 Yuqing Du.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
     
-    Last updated: October 03, 2020.
+    Last updated: July 2023.
     
   </div>
 </footer>
