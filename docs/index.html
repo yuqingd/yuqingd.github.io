@@ -153,11 +153,12 @@
     
 
     <div class="clearfix">
-      <p>Hello! I am a fourth year PhD student at UC Berkeley advised by Professor <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> at the <a href="http://bair.berkeley.edu/">Berkeley Artificial Intelligence Research (BAIR) Lab</a>. I received my B.A.Sc in Engineering Physics from the University of British Columbia, where I was advised by Professors <a href="http://caris-mech.sites.olt.ubc.ca/profiles/machiel-van-der-loos/">Machiel Van der Loos</a> and <a href="https://research.monash.edu/en/persons/elizabeth-croft">Elizabeth Croft</a> at the <a href="https://caris.mech.ubc.ca/">Collaborative Advanced Robotics and Intelligent Systems (CARIS) Lab</a>.</p>
+      <p>Hello! I am a fourth year PhD candidate at UC Berkeley advised by Professor <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> at the <a href="http://bair.berkeley.edu/">Berkeley Artificial Intelligence Research (BAIR) Lab</a>. I received my B.A.Sc in Engineering Physics with a minor in Honours Mathematics from the University of British Columbia, where I was advised by Professors <a href="http://caris-mech.sites.olt.ubc.ca/profiles/machiel-van-der-loos/">Machiel Van der Loos</a> and <a href="https://research.monash.edu/en/persons/elizabeth-croft">Elizabeth Croft</a> at the <a href="https://caris.mech.ubc.ca/">Collaborative Advanced Robotics and Intelligent Systems (CARIS) Lab</a>.</p>
 
-<p>Currently I am interested in developing unsupervised reinforcement learning methods to reduce reliance on hand-crafted rewards and highly curated datasets. 
-  Some directions I am curious about: 1) understanding which objectives can successfully intrinsically motivate agents to learn emergent, useful behaviours, 2) how can we leverage human demonstrations, priors, and feedback to bootstrap exploration in open-ended environments, and 3) how can we use multi-agent interactions to automatically generate learning curricula.
-  Specific applications I am interested in include real-world robotics and assistive software agents. </p>
+      <p>I am also currently a visiting researcher at <a href="https://ai.meta.com/research/">FAIR (Meta)</a>. Previously, I have also interned at <a href="https://www.deepmind.com">DeepMind</a> and <a href="https://x.company">X, the moonshot factory</a>. </p>
+      
+<p>Currently, I am broadly interested in better imbuing reinforcement-learning-based agents with human preferences, knowledge, and world priors. For example, some of my prior works 
+include training multimodal reward models from human data, learning to assist and empower individuals, and leveraging common-sense human priors for exploration. </p>
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
@@ -175,6 +176,50 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
  
   <h2>publications</h2>
   <ol class="bibliography">
+  <li><div class="row">
+      <div class="col-sm-2 abbr">
+        <abbr class="badge">ICML 2022</abbr>
+      </div>
+    
+      <div id="du2022vib" class="col-sm-8">
+        
+          <div class="title">Bayesian Imitation Learning for End-to-End Mobile Manipulation</b></div>
+          <div class="author">
+                    <em>Du, Yuqing</em>,
+                      <a href="https://scholar.google.com/citations?hl=en&user=i05Kw5cAAAAJ" target="_blank">Ho, Daniel</a>,
+                      <a href="https://www.alexalemi.com" target="_blank">Alemi, Alexander A.</a>,
+                      <a href="https://evjang.com" target="_blank">Jang, Eric</a>,
+                      and <a href="https://scholar.google.ch/citations?user=Z3dxz9IAAAAJ" target="_blank">Khansari, Mohi</a>
+            
+          </div>
+    
+          <div class="periodical">
+          
+            <em>International Conference on Machine Learning (ICML) 2022</em>
+            <br>
+            july
+            2022
+          
+          </div>
+        
+    
+        <div class="links">
+        
+          <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+          <a href="https://arxiv.org/abs/2202.07600" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+        </div>
+    
+        <!-- Hidden abstract block -->
+        
+        <div class="abstract hidden">
+          <p>In this work we investigate and demonstrate benefits of a Bayesian approach to imitation learning from multiple sensor inputs, as applied to the task of opening office doors with a mobile manipulator. Augmenting policies with additional sensor inputs, such as RGB + depth cameras, is a straightforward approach to improving robot perception capabilities, especially for tasks that may favor different sensors in different situations. As we scale multi-sensor robotic learning to unstructured real-world settings (e.g. offices, homes) and more complex robot behaviors, we also increase reliance on simulators for cost, efficiency, and safety. Consequently, the sim-to-real gap across multiple sensor modalities also increases, making simulated validation more difficult. We show that using the Variational Information Bottleneck (Alemi et al., 2016) to regularize convolutional neural networks improves generalization to held-out domains and reduces the sim-to-real gap in a sensor-agnostic manner. As a side effect, the learned embeddings also provide useful estimates of model uncertainty for each sensor. We demonstrate that our method is able to help close the sim-to-real gap and successfully fuse RGB and depth modalities based on understanding of the situational uncertainty of each sensor. In a real-world office environment, we achieve 96% task success, improving upon the baseline by +16%.</p>
+        </div>
+        
+      </div>
+    </div>
+    </li>
+
+    
     <li><div class="row">
       <div class="col-sm-2 abbr">
         <abbr class="badge">ICML 2022</abbr>
