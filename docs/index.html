@@ -153,8 +153,7 @@
 
     <div class="clearfix">
       <p>Hello! I am a fourth year PhD candidate at UC Berkeley advised by Professor <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a> at the <a href="http://bair.berkeley.edu/">Berkeley Artificial Intelligence Research (BAIR) Lab</a>. I received my B.A.Sc in Engineering Physics with a minor in Honours Mathematics from the University of British Columbia, where I was advised by Professors <a href="http://caris-mech.sites.olt.ubc.ca/profiles/machiel-van-der-loos/">Machiel Van der Loos</a> and <a href="https://research.monash.edu/en/persons/elizabeth-croft">Elizabeth Croft</a> at the <a href="https://caris.mech.ubc.ca/">Collaborative Advanced Robotics and Intelligent Systems (CARIS) Lab</a>.</p>
-
-      <p>I am also currently a visiting researcher at <a href="https://ai.meta.com/research/">FAIR (Meta)</a>. Previously, I have also interned at <a href="https://www.deepmind.com">DeepMind</a> and <a href="https://x.company">X, the moonshot factory</a>. </p>
+      <p> Previously, I have also been a visiting researcher at <a href="https://ai.meta.com/research/">FAIR (Meta)</a>, and have interned at <a href="https://www.deepmind.com">DeepMind</a> and <a href="https://x.company">X, the moonshot factory</a>. </p>
       
 <p>I am broadly interested in helping reinforcement-learning-based agents learn from humans -- whether that be understanding human preferences, learning from interaction, or acquiring world priors. For example, some of my prior works 
 include training multimodal reward models from human data, learning to assist and empower individuals, and leveraging common-sense human priors for open-ended exploration. </p>
@@ -177,26 +176,26 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
         <ol class="bibliography"><li><div class="row">
           <div class="col-sm-3 float-left">
+
             <center>
-              <img class="img-fluid z-depth-1 rounded" src="/assets/img/dpok.png">
-            </center>
+            <img class="img-fluid z-depth-1 rounded" src="/assets/img/dynalang.png">
+          </center> 
           </div>
         
-        <div id="fan2023dpok" class="col-sm-7 clearfix">
+        <div id="lin2023dynalang" class="col-sm-7">
           
-          <div class="title"><a href="https://arxiv.org/pdf/2305.16381.pdf">DPOK: Reinforcement Learning for Fine-tuning Text-to-Image Diffusion Models</a></div>
+        <div class="title"><a href="https://arxiv.org/pdf/2308.01399.pdf">Learning to Model the World with Language</a></div>
           <div class="author">
-            <a href="https://pages.cs.wisc.edu/~yingfan/">Ying Fan</a>, 
-            <a href="https://www.linkedin.com/in/olivia-watkins-a73580bb/"> Olivia Watkins</a>, 
+            <a href="https://www.jessylin.com/">  Jessy Lin</a>, 
             <em>Yuqing Du</em>, 
-            <a href="https://www.haoliu.site"> Hao Liu</a>, 
-              <a href="https://www.linkedin.com/in/moonkyung-ryu-b1199918/"> Moonkyung Ryu</a>, 
-                <a href="https://www.cs.toronto.edu/~cebly/"> Craig Boutilier</a>, 
-                  <a href="https://people.eecs.berkeley.edu/~pabbeel/"> Pieter Abbeel</a>, 
-                    <a href="https://mohammadghavamzadeh.github.io"> Mohammad Ghavamzadeh</a>, 
-                      <a href="https://kangwooklee.com"> Kangwook Lee</a>, and
-                        <a href="https://sites.google.com/view/kiminlee">  Kimin Lee</a>
+            <a href="https://www.linkedin.com/in/olivia-watkins-a73580bb/"> Olivia Watkins</a>, 
+            <a href="https://danijar.com/">Danijar Hafner</a>, 
+            <a href="https://people.eecs.berkeley.edu/~pabbeel/"> Pieter Abbeel</a>,
+            <a href="https://people.eecs.berkeley.edu/~klein/"> Dan Klein</a>,  and 
+            and <a href="http://people.eecs.berkeley.edu/~anca/" target="_blank">Anca Dragan</a>
         
+               
+                 
         </div>
         
           <div class="periodical">      
@@ -207,15 +206,16 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
         <div class="links">
         
           <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-          <a href="https://arxiv.org/abs/2305.16381" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
-          <a href="https://sites.google.com/view/dpok-t2i-diffusion/home" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+          <a href="https://arxiv.org/abs/2308.01399" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+          <a href="https://dynalang.github.io" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+          <a href="https://github.com/jlin816/dynalang" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
         
         </div>
         
         <!-- Hidden abstract block -->
         
         <div class="abstract hidden">
-          <p>Learning from human feedback has been shown to improve text-to-image models. These techniques first learn a reward function that captures what humans care about in the task and then improve the models based on the learned reward function. Even though relatively simple approaches (e.g., rejection sampling based on reward scores) have been investigated, fine-tuning text-to-image models with the reward function remains challenging. In this work, we propose using online reinforcement learning (RL) to fine-tune text-to-image models. We focus on diffusion models, defining the fine-tuning task as an RL problem, and updating the pre-trained text-to-image diffusion models using policy gradient to maximize the feedback-trained reward. Our approach, coined DPOK, integrates policy optimization with KL regularization. We conduct an analysis of KL regularization for both RL fine-tuning and supervised fine-tuning. In our experiments, we show that DPOK is generally superior to supervised fine-tuning with respect to both image-text alignment and image quality. </p>
+          <p>To interact with humans in the world, agents need to understand the diverse types of language that people use, relate them to the visual world, and act based on them. While current agents learn to execute simple language instructions from task rewards, we aim to build agents that leverage diverse language that conveys general knowledge, describes the state of the world, provides interactive feedback, and more. Our key idea is that language helps agents predict the future: what will be observed, how the world will behave, and which situations will be rewarded. This perspective unifies language understanding with future prediction as a powerful self-supervised learning objective. We present Dynalang, an agent that learns a multimodal world model that predicts future text and image representations and learns to act from imagined model rollouts. Unlike traditional agents that use language only to predict actions, Dynalang acquires rich language understanding by using past language also to predict future language, video, and rewards. In addition to learning from online interaction in an environment, Dynalang can be pretrained on datasets of text, video, or both without actions or rewards. From using language hints in grid worlds to navigating photorealistic scans of homes, Dynalang utilizes diverse types of language to improve task performance, including environment descriptions, game rules, and instructions. </p>
         </div>
         
         </div>
@@ -223,6 +223,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
         
         </div>
         </li></ol>
+
 
         <ol class="bibliography"><li><div class="row">
           <div class="col-sm-3 float-left">
@@ -328,6 +329,54 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     <li><div class="row">
       <div class="col-sm-3 float-left">
         <center>
+        <img class="img-fluid z-depth-1 rounded" src="/assets/img/dpok.png">
+        <!-- <abbr class="badge">CoLLAs 2023</abbr> -->
+        </center>
+      </div>
+    
+      <div id="fan2023dpok" class="col-sm-7">
+        
+        <div class="title"><a href="https://arxiv.org/pdf/2305.16381.pdf">DPOK: Reinforcement Learning for Fine-tuning Text-to-Image Diffusion Models</a></div>
+        <div class="author">
+          <a href="https://pages.cs.wisc.edu/~yingfan/">Ying Fan</a>, 
+          <a href="https://www.linkedin.com/in/olivia-watkins-a73580bb/"> Olivia Watkins</a>, 
+          <em>Yuqing Du</em>, 
+          <a href="https://www.haoliu.site"> Hao Liu</a>, 
+            <a href="https://www.linkedin.com/in/moonkyung-ryu-b1199918/"> Moonkyung Ryu</a>, 
+              <a href="https://www.cs.toronto.edu/~cebly/"> Craig Boutilier</a>, 
+                <a href="https://people.eecs.berkeley.edu/~pabbeel/"> Pieter Abbeel</a>, 
+                  <a href="https://mohammadghavamzadeh.github.io"> Mohammad Ghavamzadeh</a>, 
+                    <a href="https://kangwooklee.com"> Kangwook Lee</a>, and
+                      <a href="https://sites.google.com/view/kiminlee">  Kimin Lee</a>
+      
+      </div>
+    
+          <div class="periodical">
+          
+            <em>Neural Information Processing Systems (NeurIPS) 2023</em>
+          
+          </div>
+        
+    
+        <div class="links">
+          <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+          <a href="https://arxiv.org/abs/2305.16381" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+          <a href="https://sites.google.com/view/dpok-t2i-diffusion/home" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+        </div>
+    
+        <!-- Hidden abstract block -->
+        
+        <div class="abstract hidden">
+          <p>Learning from human feedback has been shown to improve text-to-image models. These techniques first learn a reward function that captures what humans care about in the task and then improve the models based on the learned reward function. Even though relatively simple approaches (e.g., rejection sampling based on reward scores) have been investigated, fine-tuning text-to-image models with the reward function remains challenging. In this work, we propose using online reinforcement learning (RL) to fine-tune text-to-image models. We focus on diffusion models, defining the fine-tuning task as an RL problem, and updating the pre-trained text-to-image diffusion models using policy gradient to maximize the feedback-trained reward. Our approach, coined DPOK, integrates policy optimization with KL regularization. We conduct an analysis of KL regularization for both RL fine-tuning and supervised fine-tuning. In our experiments, we show that DPOK is generally superior to supervised fine-tuning with respect to both image-text alignment and image quality. </p>
+        </div>
+        
+      </div>
+    </div>
+    </li>
+
+    <li><div class="row">
+      <div class="col-sm-3 float-left">
+        <center>
         <img class="img-fluid z-depth-1 rounded" src="/assets/img/vlm.png">
         <!-- <abbr class="badge">CoLLAs 2023</abbr> -->
         </center>
@@ -405,6 +454,8 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
         
           <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
           <a href="https://arxiv.org/abs/2302.06692" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+          <a href="https://github.com/yuqingd/ellm" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+
         </div>
     
         <!-- Hidden abstract block -->
